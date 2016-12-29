@@ -5,7 +5,8 @@ public enum Menu {
 	ADD_BOOK(1, " - Add Book"),
 	ADD_MAGAZINE(2, " - Add Magazine"),
 	SHOW_PUBLICATIONS(3, " - Show all Publications"),
-	EXIT(4," - Close the program");
+	UPLOAD_FILE(4, " - Upload File"),
+	EXIT(5," - Close the program");
 	
 	private int menuNumber;
 	private String desc;

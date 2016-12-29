@@ -1,7 +1,17 @@
 package data;
 
-public abstract class Publication {
+import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
+@JsonSubTypes({ @JsonSubTypes.Type(value = Book.class, name = "book"),
+		@JsonSubTypes.Type(value = Magazine.class, name = "magazine") })
+
+public abstract class Publication implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String title;
 	private String authorFirstName;
 	private String authorLastName;

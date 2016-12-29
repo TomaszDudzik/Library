@@ -1,7 +1,10 @@
 package data;
 
-public class Book extends Publication {
+import java.io.Serializable;
 
+public class Book extends Publication implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private String isbn;
 	private String publisher;
 	private int pages;

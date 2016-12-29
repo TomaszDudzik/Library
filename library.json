@@ -1,0 +1,21 @@
+{
+  "publication" : [ {
+    "type" : "book",
+    "title" : "3",
+    "authorFirstName" : "3",
+    "authorLastName" : "3",
+    "publishedYear" : 3,
+    "isbn" : "3",
+    "publisher" : "3",
+    "pages" : 3
+  }, {
+    "type" : "magazine",
+    "title" : "3",
+    "authorFirstName" : "3",
+    "authorLastName" : "3",
+    "publishedYear" : 3,
+    "language" : "3",
+    "month" : 3,
+    "day" : 3
+  } ]
+}

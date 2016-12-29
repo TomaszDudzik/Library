@@ -1,7 +1,10 @@
 package data;
 
-public class Magazine extends Publication {
+import java.io.Serializable;
 
+public class Magazine extends Publication implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String language;
 	private int month;
 	private int day;
